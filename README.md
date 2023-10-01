@@ -48,8 +48,12 @@ Configure Nginx for static website (Beginner’s Guide)
           <p>If you see this page,the nginx web server is successfully installed and wokring.</p>
           <p>Further configuration is required.</p>
 
-          <p>For online documentation and support please refer to <a href="www.nginx.org">nginx.org</a>.</p>
-          <p>For online documentation and support please refer to <a href="www.nginx.com">nginx.com</a>.</p>
+          <p>
+              For online documentation and support please refer to <a href="www.nginx.org">nginx.org</a>.
+          </p>
+          <p>
+            For online documentation and support please refer to <a href="www.nginx.com">nginx.com</a>.
+          </p>
   
           <i>Thank you for using nginx.</i>
   
