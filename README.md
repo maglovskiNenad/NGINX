@@ -25,3 +25,34 @@ Configure Nginx for static website (Beginner’s Guide)
   <picutre>
     <img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/7504d83a9fe8c09d861b2f7c49e144ac773f0c0d.png">
   </picutre>
+
+* Create your website and get it ready for hosting
+  The path where the default html document is located is in
+
+  <code>/var/www/html</code>
+
+  and of course your can read it as it will do for you
+
+  <code>cat /var/www/html/index.html</code>
+
+  And it will look like this:
+
+      <!doctype html>
+      <html>
+      <head>
+          <meta charset="utf-8">
+          <title>Welcome to Nginx!</title>
+      </head>
+      <body>
+          <h1>Welcome to Nginx!</h1>
+          <p>If you see this page,the nginx web server is successfully installed and wokring.</p>
+          <p>Further configuration is required.</p>
+
+          <p>For online documentation and support please refer to <a href="www.nginx.org">nginx.org</a>.</p>
+          <p>For online documentation and support please refer to <a href="www.nginx.com">nginx.com</a>.</p>
+  
+          <i>Thank you for using nginx.</i>
+  
+      </body>
+      </html>
+  
