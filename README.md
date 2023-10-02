@@ -180,3 +180,8 @@ Configure Nginx for static website (Beginner’s Guide)
       # try_files $uri $uri/ =404;
       # }
       # }
+
+* Do you see the problem? <code>root</code> is a where you have to placed our path of index.html file. Index is used to specify file available when visiting root directory of site. server_name can be anything you want, because you aren’t pointing it to any real domain by now. In that directory we need to change the path to our new directory which is located in <code>myFirstWensite</code> . We will do it in the following way
+
+ 	<code>nano /etc/nginx/sites-available</code>
+
