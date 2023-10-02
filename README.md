@@ -276,3 +276,11 @@ Configure Nginx for static website (Beginner’s Guide)
       # try_files $uri $uri/ =404;
       # }
       # }
+
+# Activating and testing results
+* Last but not the last step To make our site working, simply restart Nginx service.
+  
+  <code> suod systemctl restart nginx</code>
+
+<img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/c/c541cea4fdab6269a04523060021728a0965e93e.png">
+If you see this page the moment you ping the IP address of your server in your browser.Congratulations! Everything works as it should. We have just configured Nginx web server.
