@@ -37,26 +37,30 @@ Configure Nginx for static website (Beginner’s Guide)
 
   And it will look like this:
 
-      <!doctype html>
+      <!DOCTYPE html>
       <html>
       <head>
-          <meta charset="utf-8">
-          <title>Welcome to Nginx!</title>
+      <title>Welcome to nginx!</title>
+      <style>
+        body {
+            width: 35em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+          }
+      </style>
       </head>
       <body>
-          <h1>Welcome to Nginx!</h1>
-          <p>If you see this page,the nginx web server is successfully installed and wokring.</p>
-          <p>Further configuration is required.</p>
+        <h1>Welcome to nginx!</h1>
+        <p>If you see this page, the nginx web server is successfully installed and
+            working. Further configuration is required.</p>
 
-          <p>
-              For online documentation and support please refer to <a href="www.nginx.org">nginx.org</a>.
-          </p>
-          <p>
-            For online documentation and support please refer to <a href="www.nginx.com">nginx.com</a>.
-          </p>
-  
-          <i>Thank you for using nginx.</i>
-  
+        <p>For online documentation and support please refer to
+        <a href="http://nginx.org/">nginx.org</a>.<br/>
+        Commercial support is available at
+        <a href="http://nginx.com/">nginx.com</a>.</p>
+
+        <p><em>Thank you for using nginx.</em></p>
       </body>
       </html>
+
   
