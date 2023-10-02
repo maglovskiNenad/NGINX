@@ -64,3 +64,24 @@ Configure Nginx for static website (Beginner’s Guide)
       </html>
 
   
+* Position yourself in the location listed above this text and create a directory with the name that suits you best.
+
+  <code>cd /var/www </code>
+
+* Create your directory:
+
+  <code>mkdir myFirstWebsite</code>
+* After creating the repositories, you need to place your main index.html in your newly created directory. For a display example we can use the following:
+
+      <!doctype html>
+      <html>
+      <head>
+      <meta charset="utf-8">
+      <title>Hello, Nginx!</title>
+      </head>
+      <body>
+          <h1>Hello, Nginx!</h1>
+          <p>We have just configured our Nginx web server on Ubuntu Server!</p>
+      </body>
+      </html>
+
