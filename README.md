@@ -282,5 +282,7 @@ Configure Nginx for static website (Beginner’s Guide)
   
   <code> suod systemctl restart nginx</code>
 
+Let’s check if everything works as it should. Open our newly created site in web browser. Remember that we used :80 port.
+
 <img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/c/c541cea4fdab6269a04523060021728a0965e93e.png">
 If you see this page the moment you ping the IP address of your server in your browser.Congratulations! Everything works as it should. We have just configured Nginx web server.
