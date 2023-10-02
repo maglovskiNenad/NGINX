@@ -84,4 +84,7 @@ Configure Nginx for static website (Beginner’s Guide)
           <p>We have just configured our Nginx web server on Ubuntu Server!</p>
       </body>
       </html>
+  
+# Setting up NGINX virtual host
 
+* To setit up we need to go to file in <code> /etc/nginx/sites-enabled/</code> and it should look like this:
