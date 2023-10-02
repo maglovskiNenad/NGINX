@@ -130,7 +130,7 @@ Configure Nginx for static website (Beginner’s Guide)
 	    #
 	    # include snippets/snakeoil.conf;
 
-	    root /var/www/my-app/build;
+	    root /var/www/html;
 
 	    # Add index.php to the list if you are using PHP
 	    index index.html index.htm index.nginx-debian.html;
