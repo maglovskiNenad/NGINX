@@ -278,9 +278,9 @@ Configure Nginx for static website (Beginner’s Guide)
       # }
 
 # Activating and testing results
-* Last but not the last step To make our site working, simply restart Nginx service.
+* Last but not the last step to make our site working, simply restart Nginx service.
   
-  <code> suod systemctl restart nginx</code>
+  <code> sudo systemctl restart nginx</code>
 
 Let’s check if everything works as it should. Open our newly created site in web browser. Remember that we used :80 port.
 
