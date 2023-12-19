@@ -314,7 +314,7 @@ If you see this page the moment you ping the IP address of your server in your b
 
  Here, <code>upstream backend</code> defines a group of backend servers, and <code>proxy_pass</code> forwards requests to the defined backend servers.
  
- *Check the syntax of the configuration and restart NGINX: 
+ * Check the syntax of the configuration and restart NGINX: 
  
 		sudo nginx -t
 		sudo service nginx restart
