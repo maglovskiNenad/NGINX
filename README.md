@@ -287,4 +287,37 @@ Let’s check if everything works as it should. Open our newly created site in w
   <img src="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/c/c541cea4fdab6269a04523060021728a0965e93e.png">
 If you see this page the moment you ping the IP address of your server in your browser.Congratulations! Everything works as it should. We have just configured Nginx web server.
 
-# Let's go a little deeper to understand some things
+# Load Balancer Configuration
+
+* Create or modify the NGINX configuration file to serve as a load balancer. Here's a simple example:
+	
+		http {
+		    upstream backend {
+		        server backend1.example.com;
+		        server backend2.example.com;
+		        # Add more servers as needed
+		    }
+		
+		    server {
+		        listen 80;
+		        server_name loadbalancer.example.com;
+		
+		        location / {
+		            proxy_pass http://backend;
+		            proxy_set_header Host $host;
+		            proxy_set_header X-Real-IP $remote_addr;
+		            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		            proxy_set_header X-Forwarded-Proto $scheme;
+		        }
+		    }
+		}
+
+ Here, <code>upstream backend</code> defines a group of backend servers, and <code>proxy_pass</code> forwards requests to the defined backend servers.
+ 
+ *Check the syntax of the configuration and restart NGINX: 
+ 
+		sudo nginx -t
+		sudo service nginx restart
+  
+ * Test the load balancer by sending HTTP requests to its address. See how NGINX evenly distributes requests among backend servers.
+ * Customize the configuration according to the specific needs of your system. Consider adjusting health check options, server weights, session settings, and other options that suit your requirements.
